@@ -101,7 +101,7 @@
             </div>
             <h2 class="card-title text-lg">জাতীয় জরুরি সেবা</h2>
             <p class="mb-3 text-base">National Emergency</p>
-            <h2 class="font-bold text-2xl">999</h2>
+            <h2 class="font-bold text-2xl service-num">999</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >সার্বজনীন</span
             >
@@ -139,7 +139,7 @@
             </div>
             <h2 class="card-title text-lg">পুলিশ</h2>
             <p class="mb-3 text-base">Police</p>
-            <h2 class="font-bold text-2xl">999</h2>
+            <h2 class="font-bold text-2xl service-num">999</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >পুলিশ</span
             >
@@ -177,7 +177,7 @@
             </div>
             <h2 class="card-title text-lg">ফায়ার সার্ভিস</h2>
             <p class="mb-3 text-base">Fire Service</p>
-            <h2 class="font-bold text-2xl">999</h2>
+            <h2 class="font-bold text-2xl service-num">999</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >ফায়ার</span
             >
@@ -215,7 +215,7 @@
             </div>
             <h2 class="card-title text-lg">অ্যাম্বুলেন্স</h2>
             <p class="mb-3 text-base">Ambulance</p>
-            <h2 class="font-bold text-2xl">1994-999999</h2>
+            <h2 class="font-bold text-2xl service-num">1994-999999</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >স্বাস্থ্য</span
             >
@@ -253,7 +253,7 @@
             </div>
             <h2 class="card-title text-lg">নারী ও শিশু সহায়তা</h2>
             <p class="mb-3 text-base">Women & Child Helpline</p>
-            <h2 class="font-bold text-2xl">109</h2>
+            <h2 class="font-bold text-2xl service-num">109</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >সহায়তা</span
             >
@@ -291,7 +291,7 @@
             </div>
             <h2 class="card-title text-lg">দুদক</h2>
             <p class="mb-3 text-base">Anti-Corruption</p>
-            <h2 class="font-bold text-2xl">106</h2>
+            <h2 class="font-bold text-2xl service-num">106</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >সরকারি</span
             >
@@ -329,7 +329,7 @@
             </div>
             <h2 class="card-title text-lg">বিদ্যুৎ বিভ্রাট</h2>
             <p class="mb-3 text-base">Electricity Outage</p>
-            <h2 class="font-bold text-2xl">16216</h2>
+            <h2 class="font-bold text-2xl service-num">16216</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >বিদ্যুৎ</span
             >
@@ -367,7 +367,7 @@
             </div>
             <h2 class="card-title text-lg">ব্র্যাক</h2>
             <p class="mb-3 text-base">Brac</p>
-            <h2 class="font-bold text-2xl">16445</h2>
+            <h2 class="font-bold text-2xl service-num">16445</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >এনজিও</span
             >
@@ -405,7 +405,7 @@
             </div>
             <h2 class="card-title text-lg">বাংলাদেশ রেলওয়ে</h2>
             <p class="mb-3 text-base">Bangladesh Railway</p>
-            <h2 class="font-bold text-2xl">163</h2>
+            <h2 class="font-bold text-2xl service-num">163</h2>
             <span class="rounded-3xl bg-[#FFE3E2] px-2 py-1 w-fit text-sm"
               >পরিবহন</span
             >
@@ -427,21 +427,22 @@
         </div>
       </section>
       <aside
-        class="col-span-1 lg:col-span-1 order-first lg:order-last m-4 sm:m-7"
+        id="history-box" class="col-span-1 lg:col-span-1 order-first lg:order-last mr-4 mb-4 mt-4"
       >
         <div
           class="flex items-center justify-between px-4 py-2 bg-white rounded-lg"
         >
           <div class="flex items-center gap-2">
-            <i class="fa-solid fa-clock-rotate-left text-base sm:text-lg"></i>
-            <span class="font-semibold text-sm sm:text-base">Call History</span>
+            <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+            <span class="font-semibold text-base">Call History</span>
           </div>
           <button
-            class="btn w-fit px-3 sm:px-5 py-1 sm:py-2 bg-red-500 text-white hover:bg-red-600 rounded-3xl text-xs sm:text-sm h-8 sm:h-10 min-h-8 sm:min-h-10"
+            id="clear-history" class="btn w-fit px-5 py-2 bg-red-500 text-white hover:bg-red-600 rounded-3xl text-xs sm:text-sm h-8 sm:h-10 min-h-8 sm:min-h-10"
           >
             Clear
           </button>
         </div>
+        <div id="history-list"></div>
       </aside>
     </main>
     <footer class="footer"></footer>
