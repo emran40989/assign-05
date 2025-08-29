@@ -16,11 +16,17 @@ for (let i = 0; i < copied.length; i++) {
     copied[i].addEventListener("click", function() {
         const defaultCopy = parseInt(copyCounter.innerText);
         const newCopy = defaultCopy + 1;
-        copyCounter.innerText = newCopy;
+
+        const card = this.closest(".card-body");
+        const serviceNumber = card.querySelector(".service-num").innerText;
+
+        navigator.clipboard.writeText(serviceNumber).then(function() {
+            alert(serviceNumber + " Copied to clipboard successfully");
+            copyCounter.innerText = newCopy;
+        });
     });
 }
 
-// const called = document.getElementsByClassName("call-button");
 const coinCount = document.getElementById("coin-count");
 const callButtons = document.getElementsByClassName("call-button");
 const historyList = document.getElementById("history-list");
@@ -44,7 +50,7 @@ for (let i = 0; i < callButtons.length; i++) {
     coinCount.innerText = currentCoins - 20;
 
     const historyItem = document.createElement("div");
-    historyItem.className = "flex justify-between items-center px-3 py-2 bg-white rounded-lg shadow mb-2 mx-3";
+    historyItem.className = "flex justify-between items-center px-3 py-2 bg-gray-100 rounded-lg shadow mb-2 mx-3";
     historyItem.innerHTML = `
       <div class="flex flex-col">
         <span>${serviceName}</span>
