@@ -1,1 +1,2 @@
-console.log(document);
+
+document.getElementById
